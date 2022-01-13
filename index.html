@@ -21,6 +21,10 @@
 Hide List
 </button>
 
+<button onclick="showList()">
+Show List
+</button>
+
 <style>
 h1 {
 	color: green;
@@ -34,6 +38,14 @@ h1 {
 <script>
 function hideList() {
 	document.getElementById('testUL').innerHTML = ''
+}
+function showList() {
+	document.getElementById('testUL').innerHTML = `
+		<li>A</li>
+		<li>B</li>
+		<li>C</li>
+		<li>D</li>
+	`
 }
 </script>
 
