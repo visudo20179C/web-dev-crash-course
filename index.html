@@ -1,0 +1,39 @@
+<p>
+	Hello
+</p>
+
+<h1>
+	This is a heading.
+</h1>
+
+<h2 class="myclass">
+	This is a heading.
+</h2>
+
+<ul id="testUL">
+	<li>A</li>
+	<li>B</li>
+	<li>C</li>
+	<li>D</li>
+</ul>
+
+<button onclick="hideList()">
+Hide List
+</button>
+
+<style>
+h1 {
+	color: green;
+}
+.myclass {
+	color: red;
+	margin-left: 20px;
+}
+</style>
+
+<script>
+function hideList() {
+	document.getElementById('testUL').innerHTML = ''
+}
+</script>
+
